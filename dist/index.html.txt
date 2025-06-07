@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe | Professional Game</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-CY_qwbyu.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Tic-Tac-Toe</h1>
+            <p class="subtitle">Challenge your opponent to a classic game</p>
+        </header>
+
+        <main class="game-container">
+            <div class="game-info">
+                <div class="current-player">
+                    <span class="label">Current Player:</span>
+                    <span class="player-indicator" id="currentPlayer">X</span>
+                </div>
+                <div class="score-board">
+                    <div class="score-item">
+                        <span class="score-label">Player X</span>
+                        <span class="score-value" id="scoreX">0</span>
+                    </div>
+                    <div class="score-divider">|</div>
+                    <div class="score-item">
+                        <span class="score-label">Player O</span>
+                        <span class="score-value" id="scoreO">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-board" id="gameBoard">
+                <div class="cell" data-cell-index="0"></div>
+                <div class="cell" data-cell-index="1"></div>
+                <div class="cell" data-cell-index="2"></div>
+                <div class="cell" data-cell-index="3"></div>
+                <div class="cell" data-cell-index="4"></div>
+                <div class="cell" data-cell-index="5"></div>
+                <div class="cell" data-cell-index="6"></div>
+                <div class="cell" data-cell-index="7"></div>
+                <div class="cell" data-cell-index="8"></div>
+            </div>
+
+            <div class="game-status" id="gameStatus">
+                Player X's turn
+            </div>
+
+            <div class="game-controls">
+                <button class="btn btn-primary" id="resetBtn">Reset Game</button>
+                <button class="btn btn-secondary" id="newGameBtn">New Game</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Professional Tic-Tac-Toe Game</p>
+        </footer>
+    </div>
+
+    <div class="modal" id="gameModal">
+        <div class="modal-content">
+            <h2 class="modal-title" id="modalTitle">Game Over!</h2>
+            <p class="modal-message" id="modalMessage">Player X wins!</p>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="playAgainBtn">Play Again</button>
+                <button class="btn btn-secondary" id="closeModalBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
